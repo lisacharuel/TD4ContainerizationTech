@@ -3,8 +3,8 @@ FROM postgres:14
 ENV POSTGRES_USER=postgres
 ENV POSTGRES_PASSWORD=password
 
-ENV POSTGRES_DB=database_containerization_PW4
+ENV POSTGRES_DB=database_containerization_PW5
 
 COPY ./init.sql /docker-entrypoint-initdb.d/
 
-EXPOSE 5464
+EXPOSE 5432
